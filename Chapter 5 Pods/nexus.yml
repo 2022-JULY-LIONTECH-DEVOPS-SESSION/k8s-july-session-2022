@@ -1,0 +1,12 @@
+apiVersion: v1
+kind:  Pod
+metadata:
+  name: sonartype-nexus
+  labels:
+    app:  nexus 
+spec:
+  containers:
+    - name: nexus-application
+      image: sonatype/nexus3
+      ports:
+      - containerPort: 8081
