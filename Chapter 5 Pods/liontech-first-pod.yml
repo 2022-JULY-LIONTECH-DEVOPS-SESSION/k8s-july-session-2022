@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: liontech-first-pod-ltech-aws-ecr
+spec:
+  containers:
+  - name: liontech-first-pod-v1
+    image: 582651564747.dkr.ecr.ca-central-1.amazonaws.com/liontech-july-sesion:nextcloud-5.2.0
+
